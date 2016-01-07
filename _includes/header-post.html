@@ -1,26 +1,26 @@
 <header class="site-header">
-  <nav class="site-nav">
-    <ul>
-      {% for page in site.pages %}
-      {% if page.title and page.hide != true %}
-      <li>
-        <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
+    <nav class="site-nav">
+        <ul>
+            {% for page in site.pages %} {% if page.title and page.hide != true %}
+            <li>
+                <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">
           {{ page.title }}
         </a>
-      </li>
-      {% endif %}
-      {% endfor %}
-    </ul>
-  </nav>
+            </li>
+            {% endif %} {% endfor %}
+        </ul>
+    </nav>
 
-  {% if site.theme.header_text %}
-  <div class="call-out" 
-  style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
-    <h1 class="site-title">
+    {% if site.theme.header_text %}
+    <div class="call-out" style="background-image: url('{{ site.baseurl }}/{{ site.theme.header_text_feature_image }}')">
+        <h1 class="site-title">
       <a href="{{ site.baseurl }}/">{{ site.theme.title }}</a>
     </h1>
-    <div class="divider"></div>
-    <h1 class="title">{{ page.title }}</h1>
-  </div>
-  {% endif %}
+        <div class="divider"></div>
+        <h1 class="title">{{ page.title }}</h1>
+        {% if page.title == "Contact" %}
+        <h3 class="contactEmail"><a href="mailto:{{ site.theme.email_address }}" title="{{ site.theme.str_email }}">infocobunny@gmail.com</a></h3>
+        {% endif %}
+    </div>
+    {% endif %}
 </header>
