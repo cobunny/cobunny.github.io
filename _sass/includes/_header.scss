@@ -1,9 +1,11 @@
 .site-header {
     @extend %padding-small;
-    background: $feature-image;
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: cover;
+    background: {
+        image: $feature-image;
+        repeat: no-repeat;
+        position: center center;
+        size: cover;
+    }
     border-top: 5px solid $header-desc-background-color;
     display: inline-block;
     width: 100%;

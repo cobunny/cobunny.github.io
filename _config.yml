@@ -14,7 +14,7 @@ theme:
      <p>Write code, blend code, build something, and use your power for good</p>
   header_text_feature_image:
   footer_text: >
-   Copyright 2015 © <a href="http://www.qiongxiemichaels.com/">Running Rabbit Pixel Lab</a>
+   Copyright 2015 © <a class= "on-hover" href="http://www.qiongxiemichaels.com/">Running Rabbit Pixel Lab</a>
 
   # Icons
   rss: false
