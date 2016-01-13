@@ -1,7 +1,24 @@
-<script src="{{ "/js/main.js" | prepend: site.baseurl }}"></script>
+<script src="{{ " /js/main.js " | prepend: site.baseurl }}"></script>
 
 {% if site.theme.footer_text %}
 <footer class="site-footer">
-  <p class="text">{{ site.theme.footer_text }}</p>
+	<div class="scroll-top-wrapper">
+		<div class="scroll-top-inner">
+			<a href="#"><i class="fa fa-2x fa-arrow-circle-up"></i></a>
+		</div>
+	</div>
+	<p class="text">{{ site.theme.footer_text }}</p>
 </footer>
+
+<script> 
+$(function(){
+	$(document).on( 'scroll', function(){ 
+		if ($(window).scrollTop() > 100) {
+			$('.scroll-top-wrapper').addClass('show');
+		} else {
+			$('.scroll-top-wrapper').removeClass('show');
+		}
+	});
+});
+</script>
 {% endif %}
