@@ -67,7 +67,7 @@ collections:
     permalink: /portfolio/:title/
 
 # BUILD SETTINGS
-markdown: kramdown
+markdown: redcarpet
 gems: [jekyll-paginate]
 
 highlighter: pygments
