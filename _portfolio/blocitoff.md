@@ -5,8 +5,6 @@ thumbnail-path: "img/blocitoff.png"
 short-description: Blocitoff is a self-destructing to-do list application.
 
 ---
-
-{:.center}
 [![Blocitoff]({{ site.baseurl }}/img/blocitoff.png)](https://github.com/cobunny/Blocitoff)
 
 ## Explanation

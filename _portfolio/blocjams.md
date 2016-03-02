@@ -6,8 +6,6 @@ short-description: Bloc jams is a digital music player to find and play the song
 
 
 ---
-
-{:.center}
 [![Blocjams]({{ site.baseurl }}/img/blocjams.png)](https://github.com/cobunny/bloc-jams-angular)
 
 ## Explanation
